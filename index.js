@@ -35,12 +35,12 @@ function writeToFile(fileName, data) {
 // function to initialize program
 function init() {
     inquirer
-    .Prompt(questions)
-    .then(answers => {
+        .prompt(questions)
+        .then(answers => {
         console.log(answers);
     })
 
 };
 
 // function call to initialize program
-                            
+init()
