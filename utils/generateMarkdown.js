@@ -30,11 +30,11 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
-  For any questions contact me using the following links:
+  For any questions contact me using the following:
   
   
-  [Github]
-  [Email]`;
+  Github: [${data.githubUsername}](https://github.com/${data.githubUsername})  <br>
+  Email: ${data.email}`;
 }
 
 module.exports = generateMarkdown;

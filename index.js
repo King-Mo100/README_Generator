@@ -26,7 +26,7 @@ const questions = [
 
 {
     type: "input",
-    name: "Usage",
+    name: "usage",
     message: "What is the usage of this project?"
 
 },
@@ -40,14 +40,14 @@ const questions = [
 
 {
     type: "input",
-    name: "Contributing",
+    name: "contributing",
     message: "Who contributed towards this project?",
 
 },
 
 {
     type: "input",
-    name: "Tests",
+    name: "tests",
     message: "What are the instructions to test this project?",
 },
 
@@ -55,13 +55,13 @@ const questions = [
 
 {
     type: "input",
-    name: "Github username",
+    name: "githubUsername",
     message: "What is your github ursername?",
 },
 
 {
     type: "input",
-    name: "Email",
+    name: "email",
     message: "What is your email address?",
 },
 
