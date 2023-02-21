@@ -35,9 +35,7 @@ const questions = [
     type: "list",
     name: "licence",
     message: "Choose the licence for this project",
-    choices: [
-
-    ]
+    choices: ['Apache','BSD-2-Clasue','GNU','MIT','ISC'],
 },
 
 {
@@ -53,11 +51,7 @@ const questions = [
     message: "What are the instructions to test this project?",
 },
 
-{
-    type: "input",
-    name: "Questions",
-    message: " ",
-},
+
 
 {
     type: "input",
