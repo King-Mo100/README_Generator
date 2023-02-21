@@ -24,6 +24,52 @@ const questions = [
     message: "Describe your projects intsallation process"
 },
 
+{
+    type: "input",
+    name: "Usage",
+    message: "What is the usage of this project?"
+
+},
+
+{
+    type: "list",
+    name: "licence",
+    message: "Choose the licence for this project",
+    choices: [
+
+    ]
+},
+
+{
+    type: "input",
+    name: "Contributing",
+    message: "Who contributed towards this project?",
+
+},
+
+{
+    type: "input",
+    name: "Tests",
+    message: "What are the instructions to test this project?",
+},
+
+{
+    type: "input",
+    name: "Questions",
+    message: " ",
+},
+
+{
+    type: "input",
+    name: "Github username",
+    message: "What is your github ursername?",
+},
+
+{
+    type: "input",
+    name: "Email",
+    message: "What is your email address?",
+},
 
 
 ];
