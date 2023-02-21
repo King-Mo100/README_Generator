@@ -71,6 +71,13 @@ const questions = [
 // function to write README file
 function writeToFile(fileName, data) {
 }
+fs.writeFile('READme.md',data,(err) => {
+    if (err) {
+        console.log(error)
+    } else{
+        console.log('Success!')
+    }
+});
 
 // function to initialize program
 function init() {
@@ -78,7 +85,8 @@ function init() {
         .prompt(questions)
         .then(answers => {
         console.log(answers);
-    })
+        const markdown = generateMarkdown(answers);
+    });
 
 };
 
