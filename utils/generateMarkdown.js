@@ -2,10 +2,17 @@
 function generateMarkdown(data) {
   return `# ${data.title}
 
+  ## Table of Contents
+  * [Descritption](#description)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [License](#license)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [Questions](#questions)
+
   ## Description
   ${data.description}
-
-  ## Table of Contents
 
   ## Installation
   ${data.installation}
@@ -23,8 +30,11 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
-  ${data.questions}
-`;
+  For any questions contact me using the following links:
+  
+  
+  [Github]
+  [Email]`;
 }
 
 module.exports = generateMarkdown;
