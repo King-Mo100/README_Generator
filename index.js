@@ -71,7 +71,7 @@ const questions = [
 // function to write README file
 function writeToFile(fileName, data) {
 
-fs.writeFile('READme.md',data,(err) => {
+fs.writeFile('newREADme.md',data,(err) => {
     if (err) {
         console.log(error)
     } else{
@@ -86,7 +86,7 @@ function init() {
         .then(answers => {
             console.log(answers);
              const markdown = generateMarkdown(answers);
-             writeToFile('README.md',markdown);
+             writeToFile('newREADME.md',markdown);
     });
 
 };
