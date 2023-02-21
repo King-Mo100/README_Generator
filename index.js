@@ -13,7 +13,7 @@ const questions = [
 
 {
     type: "input",
-    name: "descritption",
+    name: "description",
     message: "Write a description about your project"
 
 },
@@ -33,7 +33,7 @@ const questions = [
 
 {
     type: "list",
-    name: "licence",
+    name: "license",
     message: "Choose the licence for this project",
     choices: ['Apache','BSD-2-Clasue','GNU','MIT','ISC'],
 },
@@ -70,7 +70,7 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-}
+
 fs.writeFile('READme.md',data,(err) => {
     if (err) {
         console.log(error)
@@ -78,14 +78,15 @@ fs.writeFile('READme.md',data,(err) => {
         console.log('Success!')
     }
 });
-
+}
 // function to initialize program
 function init() {
     inquirer
         .prompt(questions)
         .then(answers => {
-        console.log(answers);
-        const markdown = generateMarkdown(answers);
+            console.log(answers);
+             const markdown = generateMarkdown(answers);
+             writeToFile('README.md',markdown);
     });
 
 };
