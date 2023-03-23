@@ -20,7 +20,7 @@ To install the Readme Generator App, follow these steps:
 
 To use the Readme Generator App, follow these steps:
 
-1. 0Navigate to the project directory using cd readme-generator-app
+1. Navigate to the project directory using cd readme-generator-app
 2. Run the application using node index.js
 3. Follow the prompts to enter the required information about your project.
 4. Once you have entered all the required information, the app will generate a README.md file in the current directory.
